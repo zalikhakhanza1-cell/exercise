@@ -24,4 +24,4 @@ size = array_3d.shape
 print(f"array_3d: {array_3d}")
 print(f"dimensi: {dimensions}")
 print(f"size: {size}")
-
+print()
