@@ -9,7 +9,7 @@ print("⚠️ PERTANDINGAN DIMULAI ⚠️")
 print("Kamu hanya punya 5 KESEMPATAN untuk bertahan hidup.")
 print("Setiap keputusan menentukan nasibmu...")
 print("==========================================\n")
-while attempt < 10:
+while attempt < 5:
     computer = random.choice(item)
     user = input("enter your choice: ").lower().strip()
     if user not in item:
@@ -25,10 +25,10 @@ while attempt < 10:
     else:
         print(f"you lose! computer choose {computer}")
     attempt += 1
-print(f"time is over! your score is {scores}")
-if scores <= 5:
+print(f"===time is over! your score is {scores}===")
+if scores <= 2:
     print("WAKTU HABIS! Kamu gagal mengalahkan sistem...")
-elif scores >= 6:
+elif scores >= 3:
     print("SELAMAT! Kamu berhasil lolos dari 5 ronde maut!")
 
 

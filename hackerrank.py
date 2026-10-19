@@ -1,36 +1,36 @@
 from itertools import product, permutations, combinations, combinations_with_replacement, groupby
 from collections import Counter
 
-# print('-' * 4, "COUNTER", '-' * 4)
-# number_of_shoes = int(input())
-# shoe_size = Counter(map(int, input().split()))
-# number_of_custumers = int(input())
-# total = 0
-# for custumers in range(number_of_custumers):
-#     size, price = map(int, input().split())
-#     if shoe_size[size] > 0:
-#         shoe_size[size] -= 1
-#         total += price
-# print(total)
-# # itertools.product()
-# print('-' * 4, "PRODUCT", '-' * 4)
-# A = map(int, input().split())
-# B = map(int, input().split())
-# print(*product(A, B))
-# # itertools.combinations()
-# print('-' * 4, "COMBINATIONS", '-' * 4)
-# string, integer = input().split()
-# integer = int(integer)
-# for i in range(integer + 1):
-#     for c in combinations(sorted(string), i):
-#         print(''.join(c)) 
+print('-' * 4, "COUNTER", '-' * 4)
+number_of_shoes = int(input())
+shoe_size = Counter(map(int, input().split()))
+number_of_custumers = int(input())
+total = 0
+for custumers in range(number_of_custumers):
+    size, price = map(int, input().split())
+    if shoe_size[size] > 0:
+        shoe_size[size] -= 1
+        total += price
+print(total)
+# itertools.product()
+print('-' * 4, "PRODUCT", '-' * 4)
+A = map(int, input().split())
+B = map(int, input().split())
+print(*product(A, B))
+# itertools.combinations()
+print('-' * 4, "COMBINATIONS", '-' * 4)
+string, integer = input().split()
+integer = int(integer)
+for i in range(integer + 1):
+    for c in combinations(sorted(string), i):
+        print(''.join(c)) 
 
-# # itertools.permutaions()
-# print('-' * 4, "PERMUTATIONS", '-' * 4 )
-# string, integer = input().split()
-# integer = int(integer)
-# permutation = permutations(sorted(string), integer)
-# for x in permutation:
+# itertools.permutaions()
+print('-' * 4, "PERMUTATIONS", '-' * 4 )
+string, integer = input().split()
+integer = int(integer)
+permutation = permutations(sorted(string), integer)
+for x in permutation:
 #     print(''.join(x))
 # combinations_with_replacement
 # print('-' * 4 ,"combinations_with_replacement", '-' * 4)
@@ -77,6 +77,40 @@ from collections import Counter
 # # twoSum
 # print('-' * 4, "TWOSUM", '-' * 4)
 # def twoSum(nums, target):
+#     seen = []
+#     for num in nums:
+#         complement = target - num
+#         if complement in seen:
+#             return [complement, num] 
+#         seen.append(num)
+        
+# nums = list(map(int, input().split()))
+# target = int(input())
+# results = twoSum(nums, target)
+# print(results)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def twoSum(nums, target):
 #     seen = {}
 #     for i, num in enumerate(nums):
 #         complement = target - num
@@ -87,9 +121,3 @@ from collections import Counter
 # target = int(input())
 # results = twoSum(nums, target)
 # print(results)
-def square_of_sum(num):
-    total = 0
-    for i in range(1, num + 1):
-        total += i
-        return total * total
-print(square_of_sum(2)) 
