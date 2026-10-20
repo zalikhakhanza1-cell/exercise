@@ -1,4 +1,4 @@
-# rock, paper, scissor console 
+# rock, paper, scissor games
 import random
 item = ["rock", "paper", "scissors"]
 scores = 0
