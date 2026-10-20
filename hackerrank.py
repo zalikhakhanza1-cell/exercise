@@ -31,7 +31,7 @@ string, integer = input().split()
 integer = int(integer)
 permutation = permutations(sorted(string), integer)
 for x in permutation:
-#     print(''.join(x))
+    print(''.join(x))
 # combinations_with_replacement
 # print('-' * 4 ,"combinations_with_replacement", '-' * 4)
 # string, integer = input().split()
