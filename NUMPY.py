@@ -10,6 +10,7 @@ print("1. 1D array")
 array_1d = np.array([1, 2, 3])
 dimensions = array_1d.ndim
 size = array_1d.shape
+elemen = array_1d.size
 print(f"array 1d: {array_1d}")
 print(f"dimensi: {dimensions}")
 print(f"ukuran: {size}")
